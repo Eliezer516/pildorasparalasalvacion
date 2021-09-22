@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>404 | Pagina no encontrada</title>
+	<link rel="stylesheet" href="/asets/css/normalize.css">
+	<link rel="stylesheet" href="/asets/css/404.css">
+</head>
+<body>
+	<div class="container-404">
+		<div class="content-404">
+			<h2>404</h2>
+			<h4>Opps! Pagina no encontrada</h4>
+			<p>Al parecer esta pagina no exsite</p>
+			<a href="https://pildorasparalasalvacion.netlify.app">Ir a Inicio</a>
+		</div>
+	</div>
+	<script>
+		var container = document.querySelector(".container-404")
+		window.onmousemove = function (e) {
+			var x = - e.clientX / 5
+			var y = - e.clientY / 5
+
+			container.style.backgroundPositionX = x + "px";
+			container.style.backgroundPositionY = y + "px";
+		}
+	</script>
+</body>
+</html>
